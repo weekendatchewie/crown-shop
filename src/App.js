@@ -1,11 +1,26 @@
-import CategoryContainer from "./components/category-container/category-container.component";
+import Home from "./routes/home/home.component";
+
+import {Routes, Route} from 'react-router-dom';
+import Navigation from "./routes/navigation/navigation.component";
 
 
 function App() {
-
     return (
-        <CategoryContainer/>
-    );
+        <Routes>
+            <Route path='/' element={<Navigation />}>
+                <Route index element={<Home/>}/>
+            </Route>
+
+            <Route
+                path="*"
+                element={
+                    <main style={{padding: "1rem"}}>
+                        <p>Oups... There's nothing here !</p>
+                    </main>
+                }
+            />
+        </Routes>
+    )
 }
 
 export default App;
