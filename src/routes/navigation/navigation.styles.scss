@@ -1,14 +1,25 @@
+@import "src/assets/globale.styles";
+
 .navigation {
   height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  padding: 0 15px;
 
   .logo-container {
-    height: 100%;
-    width: 70px;
+    //height: 100%;
+    //width: 70px;
     padding: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: filter .4s;
+
+    &:hover {
+      filter: drop-shadow(2px 2.5px 0.3px $blue-light);
+    }
   }
 
   .nav-links-container {
@@ -21,6 +32,14 @@
     .nav-link {
       padding: 10px 15px;
       cursor: pointer;
+      font-size: 20px;
+      font-weight: 800;
+      transition: filter .4s;
+      color: $soft-black;
+
+      &:hover {
+        filter: drop-shadow(2px 2.5px 0.3px $blue-light);
+      }
     }
   }
 }
