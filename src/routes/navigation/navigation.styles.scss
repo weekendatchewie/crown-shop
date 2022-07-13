@@ -34,11 +34,12 @@
       cursor: pointer;
       font-size: 20px;
       font-weight: 800;
-      transition: filter .4s;
+      transition: filter .2s;
       color: $soft-black;
 
       &:hover {
-        filter: drop-shadow(2px 2.5px 0.3px $blue-light);
+        //filter: drop-shadow(2px 2.5px 0.3px $blue-light);
+        filter: drop-shadow(1.5px 2px 0.4px #a9bafc);
       }
     }
   }
