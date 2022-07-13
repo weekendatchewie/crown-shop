@@ -2,6 +2,9 @@ import {useState} from 'react';
 import {createAuthUserWithEmailAndPassword, createUserDocumentFromAuth} from "../../utils/firebase/firebase.utils";
 import FormInput from "../form-input/form-input.component";
 
+import './signup-form.styles.scss';
+import Button from "../button/button.component";
+
 const defaultFormFields = {
     displayName: '',
     email: '',
@@ -51,8 +54,9 @@ function SignupForm() {
     }
 
     return (
-        <div>
-            <h1>Sign Up Form</h1>
+        <div className="sign-up-container">
+            <h2>Don't have an account ?</h2>
+            <span>Sign Up Form</span>
 
             <form onSubmit={handleSubmit}>
 
@@ -92,7 +96,7 @@ function SignupForm() {
                     value={confirmPassword}
                 />
 
-                <button type="submit">Sign Up</button>
+                <Button type="submit" buttonType="google">Sign Up</Button>
 
             </form>
         </div>
