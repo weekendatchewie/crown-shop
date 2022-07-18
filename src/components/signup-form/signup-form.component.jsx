@@ -96,7 +96,7 @@ function SignupForm() {
                     value={confirmPassword}
                 />
 
-                <Button type="submit" buttonType="google">Sign Up</Button>
+                <Button type="submit">Sign Up</Button>
 
             </form>
         </div>
