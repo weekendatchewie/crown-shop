@@ -35,6 +35,7 @@
     box-shadow: 0.5px 0.5px 0 0 black;
     top: 4px;
     left: 4px;
+    background-color: $blue-light;
   }
 
   &.google-sign-in {
@@ -46,14 +47,19 @@
 
     &:hover {
       box-shadow: 0.5px 0.5px 0 0 $google-color;
+      background-color: $blue-light;
+
     }
   }
 
   &.inverted {
 
+    box-shadow: 4px 4px 0 0 $blue-light;
+    border-color: $blue-light;
+
     &:hover {
-      background-color: black;
-      color: white;
+      background-color: $blue-light;
+      box-shadow: none;
     }
   }
 }
