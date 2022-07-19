@@ -8,6 +8,8 @@ import {
 } from "../../utils/firebase/firebase.utils";
 import Button from "../button/button.component";
 
+import { ReactComponent as LogoGoogle } from "../../assets/google.svg";
+
 import './signin-form.styles.scss';
 
 
@@ -99,7 +101,7 @@ function SigninForm() {
 
                 <div className="buttons-container">
                     <Button type="submit" buttonType="login">Sign In</Button>
-                    <Button type="button" onClick={signInWithGoogle} buttonType='google'>Google Sign in</Button>
+                    <Button type="button" onClick={signInWithGoogle} buttonType='google'><LogoGoogle className="logo" />oogle Sign in</Button>
                 </div>
 
             </form>

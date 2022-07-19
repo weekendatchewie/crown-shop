@@ -25,6 +25,7 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   transition: .2s all ease;
   box-shadow: 4px 4px 0 0 $black-shadow;
@@ -74,5 +75,9 @@
       background-color: $blue-light;
       box-shadow: none;
     }
+  }
+
+  .logo {
+    width: 25px;
   }
 }
