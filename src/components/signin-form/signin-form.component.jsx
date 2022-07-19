@@ -61,7 +61,7 @@ function SigninForm() {
                     setErrorMessage('User does not exist');
                     break;
                 default:
-                    return
+                    console.log(error)
             }
 
             console.log(error)
@@ -99,7 +99,7 @@ function SigninForm() {
 
                 <div className="buttons-container">
                     <Button type="submit">Sign In</Button>
-                    <Button onClick={signInWithGoogle} buttonType='google'>Google Sign in</Button>
+                    <Button type="button" onClick={signInWithGoogle} buttonType='google'>Google Sign in</Button>
                 </div>
 
             </form>
