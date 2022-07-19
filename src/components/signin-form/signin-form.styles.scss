@@ -1,0 +1,24 @@
+@import "src/assets/globale.styles";
+
+.sign-in-container {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-message {
+  border: 3px solid $red-dark;
+  padding: 10px;
+  background-color: #ffa1a1;
+  font-weight: bold;
+  border-radius: 5px;
+}

@@ -1,14 +1,14 @@
 @import "src/assets/globale.styles";
 
 .button-container {
-  min-width: 165px;
+  min-width: 170px;
   width: auto;
   height: 50px;
 
   letter-spacing: 0.5px;
   line-height: 50px;
 
-  padding: 0 35px 0 35px;
+  padding: 0 15px 0 15px;
 
   font-size: 15px;
   color: black;
@@ -25,7 +25,7 @@
   justify-content: center;
 
   transition: .2s all ease;
-  box-shadow: 4px 4px 0 0 black;
+  box-shadow: 4px 4px 0 0 $black-shadow;
   border-radius: 5px;
   position: relative;
   top: 0;
@@ -39,16 +39,16 @@
   }
 
   &.google-sign-in {
-    color: $google-color;
-    background-color: white;
+    color: white;
+    background-color: $google-color;
     border-color: $google-color;
-    box-shadow: 4px 4px 0 0 $google-color;
+    box-shadow: 4px 4px 0 0 $google-shadow;
     font-weight: 900;
 
     &:hover {
       box-shadow: 0.5px 0.5px 0 0 $google-color;
-      background-color: $blue-light;
-
+      //background-color: $blue-light;
+      filter: brightness(1.2);
     }
   }
 

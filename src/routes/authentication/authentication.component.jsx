@@ -9,6 +9,7 @@ import {
     signInWithGoogleRedirect
 } from "../../utils/firebase/firebase.utils";
 import SignupForm from "../../components/signup-form/signup-form.component";
+import SigninForm from "../../components/signin-form/signin-form.component";
 
 
 function SignIn() {
@@ -23,18 +24,11 @@ function SignIn() {
     //
     // }, [])
 
-    const logGoogleUser = async () => {
-        const {user} = await signInWithGooglePopup();
-        const userDocRef = await createUserDocumentFromAuth(user)
-    }
-
     return (
         <div>
-            <h1>Sign In</h1>
-            <button onClick={logGoogleUser}>Sign in with Google Popup</button>
-            {/*<button onClick={signInWithGoogleRedirect}>Sign in with Google Redirect</button>*/}
 
             <SignupForm />
+            <SigninForm />
 
         </div>
     );
