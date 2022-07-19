@@ -98,7 +98,7 @@ function SigninForm() {
                 />
 
                 <div className="buttons-container">
-                    <Button type="submit">Sign In</Button>
+                    <Button type="submit" buttonType="login">Sign In</Button>
                     <Button type="button" onClick={signInWithGoogle} buttonType='google'>Google Sign in</Button>
                 </div>
 

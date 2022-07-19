@@ -11,8 +11,11 @@ h2 {
 }
 
 .buttons-container {
-  display: flex;
-  justify-content: space-between;
+  //display: flex;
+  //justify-content: space-between;
+  .button-container {
+    margin: 10px 0;
+  }
 }
 
 .error-message {

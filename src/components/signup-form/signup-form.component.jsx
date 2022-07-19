@@ -96,7 +96,7 @@ function SignupForm() {
                     value={confirmPassword}
                 />
 
-                <Button type="submit">Sign Up</Button>
+                <Button type="submit" buttonType="login">Sign Up</Button>
 
             </form>
         </div>

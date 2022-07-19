@@ -1,8 +1,8 @@
 @import "src/assets/globale.styles";
 
 .button-container {
-  min-width: 170px;
-  width: auto;
+  //min-width: 170px;
+  width: 100%;
   height: 50px;
 
   letter-spacing: 0.5px;
@@ -10,14 +10,16 @@
 
   padding: 0 15px 0 15px;
 
-  font-size: 15px;
+  font-size: 16px;
   color: black;
   background-color: white;
 
   text-transform: uppercase;
 
-  font-family: 'Open Sans Condensed';
-  font-weight: bolder;
+  //font-family: 'Open Sans Condensed';
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800;
+
 
   border: 2.5px solid black;
   cursor: pointer;
@@ -38,12 +40,23 @@
     background-color: $blue-light;
   }
 
+  &.login {
+    background-color: $pink-red;
+    box-shadow: 4px 4px 0 0 #ff91b1;
+    border: none;
+    color: white;
+
+    &:hover {
+      box-shadow: 0.5px 0.5px 0 0 $pink-red;
+      filter: brightness(1.2);
+    }
+  }
+
   &.google-sign-in {
     color: white;
     background-color: $google-color;
     border-color: $google-color;
     box-shadow: 4px 4px 0 0 $google-shadow;
-    font-weight: 900;
 
     &:hover {
       box-shadow: 0.5px 0.5px 0 0 $google-color;
