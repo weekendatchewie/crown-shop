@@ -7,8 +7,8 @@ function SignIn() {
 
     return (
         <div className="authentication-container">
-            <SignupForm/>
             <SigninForm/>
+            <SignupForm/>
         </div>
     );
 }
