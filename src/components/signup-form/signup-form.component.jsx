@@ -15,6 +15,7 @@ const defaultFormFields = {
 function SignupForm() {
 
     const [formFields, setFormFields] = useState(defaultFormFields)
+    const [getErrorMessage, setErrorMessage] = useState('')
 
     const {displayName, email, password, confirmPassword} = formFields
 
@@ -46,7 +47,7 @@ function SignupForm() {
         } catch (error) {
 
             if (error.code === 'auth/email-already-in-use') {
-                alert('Email already exists')
+                setErrorMessage('User already exists');
             }
 
             console.log(error)
@@ -56,6 +57,8 @@ function SignupForm() {
     return (
         <div className="sign-up-container">
             <h2>Don't have an account ?</h2>
+
+            {getErrorMessage && <span className="error-message">{getErrorMessage}</span>}
 
             <form onSubmit={handleSubmit}>
 

@@ -1,5 +1,15 @@
+@import "src/assets/globale.styles";
+
 .authentication-container {
   display: flex;
   justify-content: space-between;
   margin: 50px auto;
+}
+
+.error-message {
+  border: 3px solid $red-dark;
+  padding: 10px;
+  background-color: #ffa1a1;
+  font-weight: bold;
+  border-radius: 5px;
 }

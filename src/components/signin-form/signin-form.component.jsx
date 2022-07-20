@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useContext} from 'react';
 import FormInput from "../form-input/form-input.component";
 import {useState} from "react";
 import {
@@ -11,6 +11,7 @@ import Button from "../button/button.component";
 import { ReactComponent as LogoGoogle } from "../../assets/google.svg";
 
 import './signin-form.styles.scss';
+import {UserContext} from "../../contexts/user.context";
 
 
 const defaultFormFields = {
@@ -23,6 +24,8 @@ function SigninForm() {
 
     const [formFields, setFormFields] = useState(defaultFormFields)
     const [getErrorMessage, setErrorMessage] = useState('')
+
+    const { setCurrentUser } = useContext(UserContext)
 
     const {email, password} = formFields
 
@@ -47,9 +50,9 @@ function SigninForm() {
 
         try {
 
-            const response = await signInAuthUserWithEmailAndPassword(email, password)
+            const { user } = await signInAuthUserWithEmailAndPassword(email, password)
 
-            console.log(response)
+            setCurrentUser(user)
 
             resetForm()
 
