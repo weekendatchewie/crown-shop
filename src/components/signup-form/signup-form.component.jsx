@@ -56,7 +56,6 @@ function SignupForm() {
     return (
         <div className="sign-up-container">
             <h2>Don't have an account ?</h2>
-            <span>Sign Up Form</span>
 
             <form onSubmit={handleSubmit}>
 

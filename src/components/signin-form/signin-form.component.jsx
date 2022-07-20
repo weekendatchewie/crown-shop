@@ -75,11 +75,9 @@ function SigninForm() {
 
             <h2>Already have an account ?</h2>
 
-            <span>Sign in with your email</span>
-
             {getErrorMessage && <span className="error-message">{getErrorMessage}</span>}
 
-            <form onSubmit={handleSubmit}>
+            <form className="form-container-signin" onSubmit={handleSubmit}>
 
                 <FormInput
                     label='Email'
