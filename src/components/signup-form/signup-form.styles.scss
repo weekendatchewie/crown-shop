@@ -1,7 +1,13 @@
 .sign-up-container {
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 550px;
+  background: aliceblue;
+  padding: 25px 15px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 4px solid #e1edf7;
+  box-shadow: 4px 4px 0 2px #e1edf7;
 }
 
 h2 {
