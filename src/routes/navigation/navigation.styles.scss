@@ -9,8 +9,6 @@
   padding: 0 15px;
 
   .logo-container {
-    //height: 100%;
-    //width: 70px;
     padding: 25px;
     display: flex;
     flex-direction: row;
@@ -18,7 +16,7 @@
     transition: filter .4s;
 
     &:hover {
-      filter: drop-shadow(2px 2.5px 0.3px $blue-light);
+      filter: drop-shadow(2px 2.5px 0.3px $pale-blue);
     }
   }
 
@@ -38,8 +36,7 @@
       color: $soft-black;
 
       &:hover {
-        //filter: drop-shadow(2px 2.5px 0.3px $blue-light);
-        filter: drop-shadow(1.5px 2px 0.4px #a9bafc);
+        filter: drop-shadow(1.5px 2px 0.4px $pale-blue);
       }
     }
   }
