@@ -1,3 +1,5 @@
+@import "src/assets/globale.styles";
+
 .category-container {
   min-width: 30%;
   height: 240px;
@@ -5,10 +7,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #a9bafc;
+  border: 2.5px solid $pale-blue;
   margin: 0 7.5px 15px;
   overflow: hidden;
-  box-shadow: 5px 5px 0 0 #a9bafc;
+  box-shadow: 5px 5px 0 0 $pale-blue;
+  border-radius: 5px;
 
   &:hover {
     cursor: pointer;
